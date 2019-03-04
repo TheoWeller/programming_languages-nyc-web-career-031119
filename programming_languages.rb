@@ -7,5 +7,5 @@ new_hash[:ruby] = {:style => [:oo]}
 
 end
 
-reformat_languages
+reformat_languages(languages)
 binding.pry
