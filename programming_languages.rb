@@ -1,4 +1,4 @@
-
+require 'pry'
 languages = {
   :oo => {
     :ruby => {
@@ -31,7 +31,7 @@ languages = {
   }
 }
 
-require 'pry'
+
 def reformat_languages(languages)
   new_hash = {}
   languages.each {
@@ -48,6 +48,6 @@ def reformat_languages(languages)
   }
   puts new_hash
   new_hash
-
 end
+#binding.pry
 reformat_languages(languages)
