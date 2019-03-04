@@ -39,10 +39,10 @@ def reformat_languages(languages)
     type_hash.each {
       |lang,lang_hash|
       if new_hash.has_key?(lang)
-        new_hash[lang][:type] << style
+        new_hash[lang][:style] << style
       else
         new_hash[lang]=lang_hash
-        new_hash[lang][:type]=[style]
+        new_hash[lang][:style]=[style]
       end
     }
   }
