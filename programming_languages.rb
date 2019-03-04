@@ -35,8 +35,8 @@ require 'pry'
 def reformat_languages(languages)
   new_hash = {}
   languages.each {
-    |type, type_hash|
-    type_hash.each {
+    |style,style_hash|
+    style_hash.each {
       |lang,lang_hash|
       if new_hash.has_key?(lang)
         new_hash[lang][:style] << style
